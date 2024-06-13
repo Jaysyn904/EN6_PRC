@@ -1,0 +1,81 @@
+{
+  "__data_type": "UTI ",
+  "AddCost": {
+    "type": "dword",
+    "value": 0
+  },
+  "BaseItem": {
+    "type": "int",
+    "value": 19
+  },
+  "Charges": {
+    "type": "byte",
+    "value": 50
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": "1"
+  },
+  "Cost": {
+    "type": "dword",
+    "value": 1
+  },
+  "Cursed": {
+    "type": "byte",
+    "value": 0
+  },
+  "DescIdentified": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "When worn, the dull gray stones on this otherwise unremarkable necklace begin to glow and sparkle with an inner light. They remain cool to the touch, however, betraying their illusionary origins.",
+      "id": 3732
+    }
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {}
+  },
+  "Identified": {
+    "type": "byte",
+    "value": 1
+  },
+  "LocalizedName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Magical Amulet",
+      "id": 13409
+    }
+  },
+  "ModelPart1": {
+    "type": "byte",
+    "value": 65
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 21
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PropertiesList": {
+    "type": "list",
+    "value": []
+  },
+  "StackSize": {
+    "type": "word",
+    "value": 1
+  },
+  "Stolen": {
+    "type": "byte",
+    "value": 0
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "en3_amulet1"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "en3_amulet1"
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "__data_type": "JRL ",
+  "Categories": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "EntryList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 1
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM111>"
+                }
+              }
+            },
+            {
+              "__struct_id": 1,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 2
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM112>"
+                }
+              }
+            },
+            {
+              "__struct_id": 2,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 3
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM113>"
+                }
+              }
+            },
+            {
+              "__struct_id": 3,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 4
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM114>"
+                }
+              }
+            },
+            {
+              "__struct_id": 4,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 5
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM115>"
+                }
+              }
+            },
+            {
+              "__struct_id": 5,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 6
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM116>"
+                }
+              }
+            },
+            {
+              "__struct_id": 6,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 7
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM117>"
+                }
+              }
+            },
+            {
+              "__struct_id": 7,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 8
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM118>"
+                }
+              }
+            },
+            {
+              "__struct_id": 8,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 9
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM119>"
+                }
+              }
+            },
+            {
+              "__struct_id": 9,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 10
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM120>"
+                }
+              }
+            },
+            {
+              "__struct_id": 10,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 11
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM121>"
+                }
+              }
+            },
+            {
+              "__struct_id": 11,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 12
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM122>"
+                }
+              }
+            },
+            {
+              "__struct_id": 12,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 13
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM123>"
+                }
+              }
+            },
+            {
+              "__struct_id": 13,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 14
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM124>"
+                }
+              }
+            },
+            {
+              "__struct_id": 14,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 15
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM125>"
+                }
+              }
+            },
+            {
+              "__struct_id": 15,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 16
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM126>"
+                }
+              }
+            },
+            {
+              "__struct_id": 16,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 17
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM127>"
+                }
+              }
+            },
+            {
+              "__struct_id": 17,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 18
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM128>"
+                }
+              }
+            },
+            {
+              "__struct_id": 18,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 19
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "<CUSTOM129>"
+                }
+              }
+            },
+            {
+              "__struct_id": 19,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 20
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "Quest Stored"
+                }
+              }
+            },
+            {
+              "__struct_id": 20,
+              "End": {
+                "type": "word",
+                "value": 1
+              },
+              "ID": {
+                "type": "dword",
+                "value": 21
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "Quest Complete"
+                }
+              }
+            }
+          ]
+        },
+        "Name": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "Quest"
+          }
+        },
+        "Picture": {
+          "type": "word",
+          "value": 65535
+        },
+        "Priority": {
+          "type": "dword",
+          "value": 4
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "jQuest"
+        },
+        "XP": {
+          "type": "dword",
+          "value": 0
+        }
+      }
+    ]
+  }
+}

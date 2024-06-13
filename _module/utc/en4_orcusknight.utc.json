@@ -1,0 +1,769 @@
+{
+  "__data_type": "UTC ",
+  "Appearance_Head": {
+    "type": "byte",
+    "value": 1
+  },
+  "Appearance_Type": {
+    "type": "word",
+    "value": 6
+  },
+  "ArmorPart_RFoot": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyBag": {
+    "type": "byte",
+    "value": 0
+  },
+  "BodyPart_Belt": {
+    "type": "byte",
+    "value": 0
+  },
+  "BodyPart_LBicep": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_LFArm": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_LFoot": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_LHand": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_LShin": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_LShoul": {
+    "type": "byte",
+    "value": 0
+  },
+  "BodyPart_LThigh": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_Neck": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_Pelvis": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_RBicep": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_RFArm": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_RHand": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_RShin": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_RShoul": {
+    "type": "byte",
+    "value": 0
+  },
+  "BodyPart_RThigh": {
+    "type": "byte",
+    "value": 1
+  },
+  "BodyPart_Torso": {
+    "type": "byte",
+    "value": 1
+  },
+  "Cha": {
+    "type": "byte",
+    "value": 22
+  },
+  "ChallengeRating": {
+    "type": "float",
+    "value": 27.0
+  },
+  "ClassList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 2,
+        "Class": {
+          "type": "int",
+          "value": 19
+        },
+        "ClassLevel": {
+          "type": "short",
+          "value": 20
+        }
+      },
+      {
+        "__struct_id": 2,
+        "Class": {
+          "type": "int",
+          "value": 6
+        },
+        "ClassLevel": {
+          "type": "short",
+          "value": 20
+        }
+      }
+    ]
+  },
+  "Color_Hair": {
+    "type": "byte",
+    "value": 1
+  },
+  "Color_Skin": {
+    "type": "byte",
+    "value": 1
+  },
+  "Color_Tattoo1": {
+    "type": "byte",
+    "value": 1
+  },
+  "Color_Tattoo2": {
+    "type": "byte",
+    "value": 1
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": "DEATH KNIGHT\r\n     A death knight is the horrifying corruption of a hero once virtuous, cursed by the gods to its terrible form as punishment for betraying the principles held in its former life. Death knights are cursed to remain in their former domains, and remember their crimes in song on any night of the full moon.\r\n     A typical death knight was a powerful warrior, taller than six feet and weighing more than 300 pounds. Its face is a blackened skull covered in scraps of shriveled, rotting flesh, and its armour and clothing is scorched and blackened as though burned in a fire. The death knight has two glowing pinpoints of flame in its eye sockets, and a deep, chilling voice that seems to echo from the depths of a bottomless cavern.\r\n     Lord Soth is the most famous death knight, dating from the Cataclysm; other death knights are probably older than the Cataclysm, and come from forgotten traitors of the Third Dragon War and the Age of Might. Death knights are likely to attack any creature that interrupts their singing or trespasses in their domains. A death knight speaks in the language it spoke in its former life, as well as up to six additional languages.\r\n\r\nCREATING A DEATH KNIGHT\r\n\"Death Knight\" is a template that can be added to any humanoid creature (hereafter referred to as the \"character\"), usually a human fighter or paladin. The character's type changes to \"undead.\" The death knight uses all the character's statistics and special abilities except as noted here.\r\n\r\nHit Dice: Increase to d12.\r\nSpeed: Same as the character.\r\nAC: The death knight has +10 armour bonus or that of the armour worn, whichever is better.\r\nSpecial Attacks: A death knight retains all of the character's special attacks and also gains three to five of those listed below. Saves have a DC of 10 + ½ death knight's HD + death knight's Charisma modifier unless noted otherwise.\r\nControl Undead (Su): A death knight can rebuke or command undead as an evil cleric.\r\nFear Aura (Su): Death knights constantly generate an aura of fear and terror in a 5-foot radius. Creatures that come within this area must succeed at a Will save or be affected as though by fear cast by a sorcerer of the death knight's level.\r\nFrightful Song (Su): The death knight can sing as a full-round action. All living creatures within a 30-foot spread must succeed at a Will save or become panicked for the duration of the singing plus an additional 2d4 rounds. This is a sonic, necromantic, mind-affecting fear effect. A creature that successfully saves against the song cannot be affected by the same death knight's song until the next sunset.\r\nSpell-Like Powers (Sp): At will - detect invisibility, detect magic, wall of ice. 2/day - dispel magic. 1/day  - fireball (20d6), symbol (fear or pain).\r\nWords of Power (Sp): Once per day, a death knight can use either power word, blind, power word, kill, or power word, stun.\r\nSpecial Qualities: The death knight retains all the character's special qualities and also gains three to five of those listed below, and also gains the undead type (see page 6 of the Monster Manual).\r\nBlindsight (Ex): The death knight can ascertain the location of creatures by non-visual means, even in magical darkness.\r\nImmunities (Ex): Death knights are immune to cold, electricity, and polymorph effects.\r\nTurn Resistance (Ex): The death knight has +4 turn resistance.\r\nSpell Resistance (Ex): SR 26\r\nWraithform (Su): The death knight can become incorporeal at will.\r\nSaves: Same as the character\r\nAbilities: A death knight gains +6 to Strength and Charisma, but being undead, has no Constitution score\r\nSkills: Death knights gain a +8 racial bonus to Intimidate, Listen, Move Silently, Search, Sense Motive, and Spot checks. Otherwise same as the character\r\nFeats: Same as the character\r\n\r\nDEATH KNIGHT CHARACTERS\r\n     Only those of undeniably evil alignment and traitorous nature are ever cursed to become a death knight. The death knight retains all class abilities it had in life, unless denied due to alignment restrictions. Most death knights are fighters, paladins, or warriors (see the DUNGEON MASTER'S Guide); a few are rangers or monks. Death knights of the other character classes are unknown.\r\n     Death knights usually attack with a sword; usually, this is a magical sword. If the death knight's treasure contains magical items, one of these should be a magical sword designed to complement the death knight's combat ability.\r\n"
+  },
+  "Con": {
+    "type": "byte",
+    "value": 10
+  },
+  "Conversation": {
+    "type": "resref",
+    "value": ""
+  },
+  "CRAdjust": {
+    "type": "int",
+    "value": -7
+  },
+  "CurrentHitPoints": {
+    "type": "short",
+    "value": 200
+  },
+  "DecayTime": {
+    "type": "dword",
+    "value": 5000
+  },
+  "Deity": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Description": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "A Death Knight is the horrifying corruption of a hero once virtuous, curesed by the gods.",
+      "id": 12458
+    }
+  },
+  "Dex": {
+    "type": "byte",
+    "value": 18
+  },
+  "Disarmable": {
+    "type": "byte",
+    "value": 0
+  },
+  "Equip_ItemList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 1,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "deathknighthelm1"
+        }
+      },
+      {
+        "__struct_id": 2,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "deathknightarmor"
+        }
+      },
+      {
+        "__struct_id": 16,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "soulcutter01"
+        }
+      },
+      {
+        "__struct_id": 131072,
+        "EquippedRes": {
+          "type": "resref",
+          "value": "deathknightskin0"
+        }
+      }
+    ]
+  },
+  "FactionID": {
+    "type": "word",
+    "value": 11
+  },
+  "FeatList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 2
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 300
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 5
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 6
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 223
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 9
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 13
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 69
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 16
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 19
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 23
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 28
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 32
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 294
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 107
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 44
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 45
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Feat": {
+          "type": "word",
+          "value": 145
+        }
+      }
+    ]
+  },
+  "FirstName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Knight of Orcus",
+      "id": 56566
+    }
+  },
+  "fortbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "Gender": {
+    "type": "byte",
+    "value": 0
+  },
+  "GoodEvil": {
+    "type": "byte",
+    "value": 0
+  },
+  "HitPoints": {
+    "type": "short",
+    "value": 200
+  },
+  "Int": {
+    "type": "byte",
+    "value": 12
+  },
+  "Interruptable": {
+    "type": "byte",
+    "value": 1
+  },
+  "IsImmortal": {
+    "type": "byte",
+    "value": 0
+  },
+  "IsPC": {
+    "type": "byte",
+    "value": 0
+  },
+  "LastName": {
+    "type": "cexolocstring",
+    "value": {}
+  },
+  "LawfulChaotic": {
+    "type": "byte",
+    "value": 0
+  },
+  "Lootable": {
+    "type": "byte",
+    "value": 0
+  },
+  "MaxHitPoints": {
+    "type": "short",
+    "value": 200
+  },
+  "NaturalAC": {
+    "type": "byte",
+    "value": 0
+  },
+  "NoPermDeath": {
+    "type": "byte",
+    "value": 0
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 29
+  },
+  "PerceptionRange": {
+    "type": "byte",
+    "value": 11
+  },
+  "Phenotype": {
+    "type": "int",
+    "value": 0
+  },
+  "Plot": {
+    "type": "byte",
+    "value": 0
+  },
+  "PortraitId": {
+    "type": "word",
+    "value": 562
+  },
+  "Race": {
+    "type": "byte",
+    "value": 24
+  },
+  "refbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "ScriptAttacked": {
+    "type": "resref",
+    "value": "nw_c2_default5"
+  },
+  "ScriptDamaged": {
+    "type": "resref",
+    "value": "nw_c2_default6"
+  },
+  "ScriptDeath": {
+    "type": "resref",
+    "value": "nw_c2_default7"
+  },
+  "ScriptDialogue": {
+    "type": "resref",
+    "value": "nw_c2_default4"
+  },
+  "ScriptDisturbed": {
+    "type": "resref",
+    "value": "nw_c2_default8"
+  },
+  "ScriptEndRound": {
+    "type": "resref",
+    "value": "nw_c2_default3"
+  },
+  "ScriptHeartbeat": {
+    "type": "resref",
+    "value": "nw_c2_default1"
+  },
+  "ScriptOnBlocked": {
+    "type": "resref",
+    "value": "nw_c2_defaulte"
+  },
+  "ScriptOnNotice": {
+    "type": "resref",
+    "value": "nw_c2_default2"
+  },
+  "ScriptRested": {
+    "type": "resref",
+    "value": "nw_c2_defaulta"
+  },
+  "ScriptSpawn": {
+    "type": "resref",
+    "value": "nw_c2_default9"
+  },
+  "ScriptSpellAt": {
+    "type": "resref",
+    "value": "nw_c2_defaultb"
+  },
+  "ScriptUserDefine": {
+    "type": "resref",
+    "value": "nw_c2_defaultd"
+  },
+  "SkillList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 20
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 20
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 10
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 28
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 18
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 18
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 28
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 28
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Rank": {
+          "type": "byte",
+          "value": 0
+        }
+      }
+    ]
+  },
+  "SoundSetFile": {
+    "type": "word",
+    "value": 28
+  },
+  "SpecAbilityList": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 4,
+        "Spell": {
+          "type": "word",
+          "value": 198
+        },
+        "SpellCasterLevel": {
+          "type": "byte",
+          "value": 0
+        },
+        "SpellFlags": {
+          "type": "byte",
+          "value": 1
+        }
+      },
+      {
+        "__struct_id": 4,
+        "Spell": {
+          "type": "word",
+          "value": 204
+        },
+        "SpellCasterLevel": {
+          "type": "byte",
+          "value": 0
+        },
+        "SpellFlags": {
+          "type": "byte",
+          "value": 1
+        }
+      }
+    ]
+  },
+  "StartingPackage": {
+    "type": "byte",
+    "value": 6
+  },
+  "Str": {
+    "type": "byte",
+    "value": 28
+  },
+  "Subrace": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "en4_orcusknight"
+  },
+  "Tail": {
+    "type": "byte",
+    "value": 0
+  },
+  "TemplateList": {
+    "type": "list",
+    "value": []
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "en4_orcusknight"
+  },
+  "WalkRate": {
+    "type": "int",
+    "value": 7
+  },
+  "willbonus": {
+    "type": "short",
+    "value": 0
+  },
+  "Wings": {
+    "type": "byte",
+    "value": 0
+  },
+  "Wis": {
+    "type": "byte",
+    "value": 18
+  }
+}

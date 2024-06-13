@@ -1,0 +1,414 @@
+{
+  "__data_type": "UTS ",
+  "Active": {
+    "type": "byte",
+    "value": 1
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Continuous": {
+    "type": "byte",
+    "value": 1
+  },
+  "Elevation": {
+    "type": "float",
+    "value": 1.0
+  },
+  "Hours": {
+    "type": "dword",
+    "value": 0
+  },
+  "Interval": {
+    "type": "dword",
+    "value": 25000
+  },
+  "IntervalVrtn": {
+    "type": "dword",
+    "value": 10000
+  },
+  "LocName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Wilderness Sounds"
+    }
+  },
+  "Looping": {
+    "type": "byte",
+    "value": 0
+  },
+  "MaxDistance": {
+    "type": "float",
+    "value": 10.0
+  },
+  "MinDistance": {
+    "type": "float",
+    "value": 1.0
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 6
+  },
+  "PitchVariation": {
+    "type": "float",
+    "value": 0.1000000014901161
+  },
+  "Positional": {
+    "type": "byte",
+    "value": 0
+  },
+  "Priority": {
+    "type": "byte",
+    "value": 19
+  },
+  "Random": {
+    "type": "byte",
+    "value": 1
+  },
+  "RandomPosition": {
+    "type": "byte",
+    "value": 0
+  },
+  "RandomRangeX": {
+    "type": "float",
+    "value": 0.0
+  },
+  "RandomRangeY": {
+    "type": "float",
+    "value": 0.0
+  },
+  "Sounds": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_batflap1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_batflap2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_batsflap1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_batsflap2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_birdflap1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_birdflap2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_birdsflap1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_birdsflap2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_fly1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_bugsscary1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_bugsscary2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crittcry1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crittcry2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crittgnaw1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crittgnaw2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crittgnaw3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crittgnaw4"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crittpeep1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crittpeep2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crittscmp1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crittscmp2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crittscmp3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crow1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crow2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crows1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_crows2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_frog1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_hawk1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_owlhoot1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_owlhoot2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_pigeon1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_pigeon2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_songbird1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_songbird2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_songbird3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_songbirds1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_songbirds2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_songbirds3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_wolfhowl1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_wolfhowl2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_wolveshwl1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_wolveshwl2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_woodpeckr1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_woodpeckr2"
+        }
+      }
+    ]
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "WildernessSounds"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "wildernesssounds"
+  },
+  "Times": {
+    "type": "byte",
+    "value": 3
+  },
+  "Volume": {
+    "type": "byte",
+    "value": 127
+  },
+  "VolumeVrtn": {
+    "type": "byte",
+    "value": 0
+  }
+}

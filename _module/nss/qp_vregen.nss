@@ -1,0 +1,36 @@
+#include "utl_i_sqluuid"
+#include "prc_x2_itemprop"
+
+void main()
+{
+object oPC;
+object oItem;
+int iQuestPoints;
+int iRegen;
+itemproperty ip;
+string sTag;
+
+
+oPC=GetPCSpeaker();
+sTag = SQLocalsUUID_GetString(oPC,"QPTag");
+oItem = GetItemPossessedBy(oPC, sTag);
+
+if(GetIsObjectValid(oItem) != 0)
+    {
+    iRegen=SQLocalsUUID_GetInt(oPC,"QP_VRegen");
+    if (iRegen < 20)
+        {
+        iQuestPoints = SQLocalsUUID_GetInt(oPC,"QuestPoints");
+        iQuestPoints = iQuestPoints - 5;
+        SQLocalsUUID_SetInt(oPC,"QuestPoints",iQuestPoints);
+        SQLocalsUUID_SetInt(oPC,"QP_VRegen",iRegen+1);
+        ip=ItemPropertyVampiricRegeneration(iRegen+1);
+        IPSafeAddItemProperty(oItem,ip);
+        DelayCommand(1.0,AssignCommand(OBJECT_SELF,ActionCastFakeSpellAtObject(SPELL_CURE_SERIOUS_WOUNDS,oPC)));
+        } else {
+        SendMessageToPC(oPC,"Vampiric Regeneration can't be raised higher than 20.");
+        }
+    } else {
+    SendMessageToPC(oPC,"Could not find item.");
+    }
+}

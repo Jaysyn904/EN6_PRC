@@ -1,0 +1,358 @@
+{
+  "__data_type": "UTS ",
+  "Active": {
+    "type": "byte",
+    "value": 1
+  },
+  "Comment": {
+    "type": "cexostring",
+    "value": ""
+  },
+  "Continuous": {
+    "type": "byte",
+    "value": 1
+  },
+  "Elevation": {
+    "type": "float",
+    "value": 1.0
+  },
+  "Hours": {
+    "type": "dword",
+    "value": 0
+  },
+  "Interval": {
+    "type": "dword",
+    "value": 60000
+  },
+  "IntervalVrtn": {
+    "type": "dword",
+    "value": 5000
+  },
+  "LocName": {
+    "type": "cexolocstring",
+    "value": {
+      "0": "Dungeon"
+    }
+  },
+  "Looping": {
+    "type": "byte",
+    "value": 0
+  },
+  "MaxDistance": {
+    "type": "float",
+    "value": 10.0
+  },
+  "MinDistance": {
+    "type": "float",
+    "value": 1.0
+  },
+  "PaletteID": {
+    "type": "byte",
+    "value": 0
+  },
+  "PitchVariation": {
+    "type": "float",
+    "value": 0.1000000014901161
+  },
+  "Positional": {
+    "type": "byte",
+    "value": 0
+  },
+  "Priority": {
+    "type": "byte",
+    "value": 19
+  },
+  "Random": {
+    "type": "byte",
+    "value": 1
+  },
+  "RandomPosition": {
+    "type": "byte",
+    "value": 0
+  },
+  "RandomRangeX": {
+    "type": "float",
+    "value": 0.0
+  },
+  "RandomRangeY": {
+    "type": "float",
+    "value": 0.0
+  },
+  "Sounds": {
+    "type": "list",
+    "value": [
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "al_pl_x2wardrum1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "al_pl_x2wardrum2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_cv_beamcreak1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_cv_beamcreak2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_cv_beamcreak3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_cv_beamcreak4"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_cv_florcreak1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_cv_florcreak2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_cv_florcreak3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_cv_woodcreak1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_cv_woodcreak2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_ratdie1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_ratdie2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_ratsqueak1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_ratsqueak2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_ratsqueak3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_ratssqeak1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_ratssqeak2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_ratssqeak3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_bat1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_bat2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_bat3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_mephgrunt1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_mephgrunt2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_mephgrunt3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_ogregrunt1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_ogregrunt2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_ogregrunt3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_orcgrunt1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_orcgrunt2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_an_orcgrunt3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_hr_x2chnratl1"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_hr_x2chnratl2"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_hr_x2chnratl3"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_hr_x2chnratl4"
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Sound": {
+          "type": "resref",
+          "value": "as_hr_x2chnratl5"
+        }
+      }
+    ]
+  },
+  "Tag": {
+    "type": "cexostring",
+    "value": "Dungeon"
+  },
+  "TemplateResRef": {
+    "type": "resref",
+    "value": "dungeon"
+  },
+  "Times": {
+    "type": "byte",
+    "value": 3
+  },
+  "Volume": {
+    "type": "byte",
+    "value": 127
+  },
+  "VolumeVrtn": {
+    "type": "byte",
+    "value": 0
+  }
+}
