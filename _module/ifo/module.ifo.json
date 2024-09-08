@@ -1289,7 +1289,7 @@
   },
   "Mod_CustomTlk": {
     "type": "cexostring",
-    "value": "prc8_cep269_mrg"
+    "value": "prc8_cep271_mrg"
   },
   "Mod_CutSceneList": {
     "type": "list",
@@ -1306,7 +1306,7 @@
   "Mod_Description": {
     "type": "cexolocstring",
     "value": {
-      "0": "Endless Nights VI v1.3prc\n\nBy: Havlen\n\nUpdated / PRC'd by: Jaysyn\n\nEndless Nights VI is a dynamic world with random monster spawns, random quests, and random magic item generation to create a very replayable game experience. The game also features various races such as shades and tieflings that come in a variety of classes and levels. The module also includes a dynamic magic item system to create variety in items."
+      "0": "Endless Nights VI [PRC8-CEP2] v1.3prc8\n\nBy: Havlen\n\nUpdated / PRC'd by: Jaysyn\n\nEndless Nights VI is a dynamic world with random monster spawns, random quests, and random magic item generation to create a very replayable game experience. The game also features various races such as shades and tieflings that come in a variety of classes and levels. The module also includes a dynamic magic item system to create variety in items."
     }
   },
   "Mod_DuskHour": {
@@ -1430,6 +1430,13 @@
         "Mod_Hak": {
           "type": "cexostring",
           "value": "prc8_craft2das"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
+          "value": "acp_v4.1"
         }
       },
       {
@@ -1901,6 +1908,96 @@
         "Value": {
           "type": "int",
           "value": 3
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "PRC_MULTISUMMON"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 1
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "PRC_XP_USE_SIMPLE_LA"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 1
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "PRC_XP_USE_SIMPLE_RACIAL_HD"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 1
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "PRC_XP_USE_SIMPLE_RACIAL_HD_NO_FREE_XP"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 1
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "PRC_ACP_MANUAL"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 1
+        }
+      },
+      {
+        "__struct_id": 0,
+        "Name": {
+          "type": "cexostring",
+          "value": "PRC_ACP_NPC_AUTOMATIC"
+        },
+        "Type": {
+          "type": "dword",
+          "value": 1
+        },
+        "Value": {
+          "type": "int",
+          "value": 1
         }
       }
     ]

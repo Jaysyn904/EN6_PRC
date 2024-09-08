@@ -17140,17 +17140,6 @@
                   },
                   {
                     "__struct_id": 0,
-                    "RESREF": {
-                      "type": "resref",
-                      "value": "prc_scr_995"
-                    },
-                    "STRREF": {
-                      "type": "dword",
-                      "value": 16790488
-                    }
-                  },
-                  {
-                    "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
                       "value": "A Stolen Dweomer"
@@ -21646,6 +21635,17 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 16827179
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_995"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16790488
                     }
                   },
                   {
