@@ -1,0 +1,10 @@
+{
+  "OutputPath": "../_output/",
+  "HakList": [
+    {
+      "Name":  "prc8_en6_top",
+      "Path": "../_hak/prc8_en6_top/",
+      "CompileModels": false
+    },	
+   ]
+}
