@@ -5,6 +5,7 @@
 #include "qst_main"
 #include "prc_inc_racial"
 #include "prc_class_const"
+#include "utl_i_sqlocals"
 
 void RemoveAllItems(object oPC);
 void AddToDynamicMerchant(object oPC);
@@ -25,23 +26,23 @@ void main()
 
 	//iDebug=1;
 
-	SetLocalInt(GetModule(),"ClientEnter",1);
-	DelayCommand(1.0f,SetLocalInt(GetModule(),"ClientEnter",0));
+	SQLocals_SetInt(GetModule(),"ClientEnter",1);
+	DelayCommand(1.0f,SQLocals_SetInt(GetModule(),"ClientEnter",0));
 
 	//:: Number PCs to tell distinct henchmen apart
-	if (GetLocalInt(oPC,"PlayerStart") == 0)
+	if (SQLocals_GetInt(oPC,"PlayerStart") == 0)
     {
-		iPCs=GetLocalInt(GetModule(),"PCs");
+		iPCs=SQLocals_GetInt(GetModule(),"PCs");
 		iPCs++;
-		SetLocalInt(GetModule(),"PCs",iPCs);
-		SetLocalInt(oPC,"PCNumber",iPCs);
+		SQLocals_SetInt(GetModule(),"PCs",iPCs);
+		SQLocals_SetInt(oPC,"PCNumber",iPCs);
     }
 
-	if (GetLocalInt(oPC,"PlayerStart") == 0 && iDebug==0)
+	if (SQLocals_GetInt(oPC,"PlayerStart") == 0 && iDebug==0)
     {
 		SetupCharacter(oPC);
     
-		if (GetLocalInt(oPC,"PCRacePower") == 0 || GetCampaignInt("Endless Nights VI","GameMode") == 1)
+		if (SQLocals_GetInt(oPC,"PCRacePower") == 0 || GetCampaignInt("Endless Nights VI","GameMode") == 1)
 			SetLocalString(oPC,"Respawn","NH1_Spawn");
     
 		else
@@ -50,17 +51,17 @@ void main()
 			SendMessageToPC(oPC,"PRC races with extra abilities/powers can only be used on Hack and Slash mode.  Use the Endless Nights Information item to set the game mode.");
         }
 		
-		if (GetLocalInt(oPC,"PCRacePower") > 0)
-			SetLocalInt(oPC,"Deaths",1);
-			SetLocalInt(oPC,"PlayerStart",1);
+		if (SQLocals_GetInt(oPC,"PCRacePower") > 0)
+			SQLocals_SetInt(oPC,"Deaths",1);
+			SQLocals_SetInt(oPC,"PlayerStart",1);
 	} 
 	else 
 	{
-		if (GetLocalInt(oPC,"PlayerStart") == 0 && iDebug==1)
+		if (SQLocals_GetInt(oPC,"PlayerStart") == 0 && iDebug==1)
         {
-			SetLocalInt(oPC,"Debug",1);
+			SQLocals_SetInt(oPC,"Debug",1);
 			//SetLocalString(oPC,"Respawn","NH1_Spawn");
-			//SetLocalInt(GetModule(),"MainQuest",2);
+			//SQLocals_SetInt(GetModule(),"MainQuest",2);
 			//SetLocalString(oPC,"Respawn",GetOverallBossTag());
 			SetLocalString(oPC,"Respawn","TST_START");
 			//SetLocalString(oPC,"Respawn","MainQuest_F");
@@ -69,20 +70,20 @@ void main()
         }
     }
 
-	if (GetLocalInt(GetModule(),"ModuleStart") == 0)
+	if (SQLocals_GetInt(GetModule(),"ModuleStart") == 0)
     {
 		DelayCommand(0.1,SetupModule());
-		SetLocalInt(GetModule(),"ModuleStart",1);
+		SQLocals_SetInt(GetModule(),"ModuleStart",1);
     }
 }
 
 void SetSpecialVariables(object oPC)
 {
-	SetLocalInt(oPC,"TM1_FOUNTAIN",Random(50));
-	SetLocalInt(oPC,"CC1_ALTER",Random(50));
-	SetLocalInt(oPC,"HC1_CHEST",Random(100));
-	SetLocalInt(oPC,"HC1_SPECIAL",Random(100));
-	SetLocalInt(oPC,"HC1_SDOOR",Random(10));
+	SQLocals_SetInt(oPC,"TM1_FOUNTAIN",Random(50));
+	SQLocals_SetInt(oPC,"CC1_ALTER",Random(50));
+	SQLocals_SetInt(oPC,"HC1_CHEST",Random(100));
+	SQLocals_SetInt(oPC,"HC1_SPECIAL",Random(100));
+	SQLocals_SetInt(oPC,"HC1_SDOOR",Random(10));
 }
 
 void SetupCharacter(object oPC)
@@ -122,7 +123,7 @@ void SetupCharacter(object oPC)
 				oNPC = CreateObject(OBJECT_TYPE_CREATURE,"en6_inheret2",GetLocation(GetObjectByTag("NH1_Town")));
         }
 		
-		SetLocalInt(oNPC,GetName(oPC),1);
+		SQLocals_SetInt(oNPC,GetName(oPC),1);
     }
 }
 
@@ -400,8 +401,8 @@ void CheckSpecialRace(object oPC)
 
 	if (iRacePower > 0)
     {
-		SetLocalInt(oPC,"PCRacePower",iRacePower);
-		SetLocalInt(oPC,"PCLevelMod",iRacePower);
+		SQLocals_SetInt(oPC,"PCRacePower",iRacePower);
+		SQLocals_SetInt(oPC,"PCLevelMod",iRacePower);
     }
 }
 
@@ -410,7 +411,7 @@ void SetupModule()
 	string sTag;
 	int iRandom;
 
-	SetLocalInt(GetModule(),"ModuleStart",1);
+	SQLocals_SetInt(GetModule(),"ModuleStart",1);
 	SetMaxHenchmen(10);
 
 	SetModuleSwitch(MODULE_SWITCH_ENABLE_UMD_SCROLLS,TRUE);
@@ -418,19 +419,19 @@ void SetupModule()
 	SetModuleSwitch(MODULE_SWITCH_ENABLE_CROSSAREA_WALKWAYPOINTS,TRUE);
 	SetModuleSwitch(MODULE_SWITCH_ENABLE_BEBILITH_RUIN_ARMOR,TRUE);
 	
-/* 	SetLocalInt(GetModule(),"PRC_165_DEATH_IMMUNITY",TRUE);  <-- All handled w/ personal_switch.2da
-	SetLocalInt(GetModule(),"PRC_PNP_TRUESEEING",TRUE);
-	SetLocalInt(GetModule(),"PRC_TIMESTOP_LOCAL",TRUE);
-	SetLocalInt(GetModule(),"PRC_PNP_FEAR_AURAS",TRUE);
-	SetLocalInt(GetModule(),"PRC_PNP_ANIMATE_DEAD",TRUE);
-	SetLocalInt(GetModule(),"PRC_CREATE_UNDEAD_PERMANENT",TRUE);
-	SetLocalInt(GetModule(),"PRC_USE_NEW_IMBUE_ARROW",TRUE);
-	SetLocalInt(GetModule(),"PRC_STAFF_CASTER_LEVEL",TRUE);
+/* 	SQLocals_SetInt(GetModule(),"PRC_165_DEATH_IMMUNITY",TRUE);  <-- All handled w/ personal_switch.2da
+	SQLocals_SetInt(GetModule(),"PRC_PNP_TRUESEEING",TRUE);
+	SQLocals_SetInt(GetModule(),"PRC_TIMESTOP_LOCAL",TRUE);
+	SQLocals_SetInt(GetModule(),"PRC_PNP_FEAR_AURAS",TRUE);
+	SQLocals_SetInt(GetModule(),"PRC_PNP_ANIMATE_DEAD",TRUE);
+	SQLocals_SetInt(GetModule(),"PRC_CREATE_UNDEAD_PERMANENT",TRUE);
+	SQLocals_SetInt(GetModule(),"PRC_USE_NEW_IMBUE_ARROW",TRUE);
+	SQLocals_SetInt(GetModule(),"PRC_STAFF_CASTER_LEVEL",TRUE);
 
-	SetLocalInt(GetModule(),"PRC_PNP_ABILITY_DAMAGE_EFFECTS",TRUE);
-	SetLocalInt(GetModule(),"PRC_PNP_ELEMENTAL_SWARM",TRUE);
-	SetLocalInt(GetModule(),"PRC_MULTISUMMON",TRUE);
-	SetLocalInt(GetModule(),"PRC_USE_BIOWARE_DATABASE",1500); */
+	SQLocals_SetInt(GetModule(),"PRC_PNP_ABILITY_DAMAGE_EFFECTS",TRUE);
+	SQLocals_SetInt(GetModule(),"PRC_PNP_ELEMENTAL_SWARM",TRUE);
+	SQLocals_SetInt(GetModule(),"PRC_MULTISUMMON",TRUE);
+	SQLocals_SetInt(GetModule(),"PRC_USE_BIOWARE_DATABASE",1500); */
 
 	SetLocalString(GetModule(),"EN6_QST_DB","EN6_QST");
 	WriteTimestampedLogEntry("*** Endless Night VI Loaded ***");
@@ -438,7 +439,7 @@ void SetupModule()
 	string sCampaign = "Endless Nights VI";
 	if (GetCampaignInt(sCampaign,"GameMode") == 1)
 	{
-		SetLocalInt(GetModule(),"GameMode",1);
+		SQLocals_SetInt(GetModule(),"GameMode",1);
 		DelayCommand(2.0,SendMessageToPC(GetFirstPC(),"Game is set for Hack and Slash mode."));
 	}
 	else
@@ -446,13 +447,13 @@ void SetupModule()
 		iRandom=Random(100);
 
 		if (iRandom<1)
-			SetLocalInt(GetModule(),"MagicLevel",3);
+			SQLocals_SetInt(GetModule(),"MagicLevel",3);
 		else if (iRandom<3)
-			SetLocalInt(GetModule(),"MagicLevel",2);
+			SQLocals_SetInt(GetModule(),"MagicLevel",2);
 		else if (iRandom<10)
-			SetLocalInt(GetModule(),"MagicLevel",1);
+			SQLocals_SetInt(GetModule(),"MagicLevel",1);
 		else
-			SetLocalInt(GetModule(),"MagicLevel",0);
+			SQLocals_SetInt(GetModule(),"MagicLevel",0);
 	}
 
 	SetupMainQuest();

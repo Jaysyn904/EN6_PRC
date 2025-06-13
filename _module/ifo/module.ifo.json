@@ -1306,7 +1306,7 @@
   "Mod_Description": {
     "type": "cexolocstring",
     "value": {
-      "0": "Endless Nights VI [PRC8-CEP2] v1.3prc8\n\nBy: Havlen\n\nUpdated / PRC'd by: Jaysyn\n\nEndless Nights VI is a dynamic world with random monster spawns, random quests, and random magic item generation to create a very replayable game experience. The game also features various races such as shades and tieflings that come in a variety of classes and levels. The module also includes a dynamic magic item system to create variety in items."
+      "0": "Endless Nights VI [PRC8-CEP2]\n\nBy: Havlen\n\nUpdated / PRC'd by: Jaysyn\n\nEndless Nights VI is a dynamic world with random monster spawns, random quests, and random magic item generation to create a very replayable game experience. The game also features various races such as shades and tieflings that come in a variety of classes and levels. The module also includes a dynamic magic item system to create variety in items."
     }
   },
   "Mod_DuskHour": {
@@ -1588,7 +1588,7 @@
   },
   "Mod_OnNuiEvent": {
     "type": "resref",
-    "value": ""
+    "value": "prc_onplayernui"
   },
   "Mod_OnPlrChat": {
     "type": "resref",
