@@ -3676,6 +3676,17 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Pixie Armor"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_amltlt_pixie"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Purple Padded Armor +2"
                     },
                     "RESREF": {
@@ -4087,6 +4098,17 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "devarobe"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Unarmed Spiritual Weapon \"Fists\""
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_sprtwp_armor"
                     }
                   }
                 ]
@@ -6117,6 +6139,28 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Imp. Grab Bite 1d6"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_ig_bite1d6"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Imp. Grab Bite 1d8"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_ig_bite1d8"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Kocrachon Bite1d6 + 3"
                     },
                     "RESREF": {
@@ -7035,6 +7079,39 @@
                     "RESREF": {
                       "type": "resref",
                       "value": "prc_vtth_bite_t"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Viper Bite, Huge"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_viperbite004"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Viper Bite, Large"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_viperbite003"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Viper Bite, Tiny"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_viperbite001"
                     }
                   },
                   {
@@ -8690,6 +8767,17 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 16807530
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Imp. Grab Claw 1d8"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_ig_claw1d8"
                     }
                   },
                   {
@@ -10722,6 +10810,17 @@
                   },
                   {
                     "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Janni Properties"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_janni_hide01"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
                     "RESREF": {
                       "type": "resref",
                       "value": "zep_cre_golems"
@@ -11032,6 +11131,17 @@
                     "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
+                      "value": "Nymph Hide"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_nymph_hide"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
                       "value": "Ogre Hide"
                     },
                     "RESREF": {
@@ -11224,6 +11334,17 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 16807632
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Pixie Properties"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_pixie_hide01"
                     }
                   },
                   {
@@ -11514,6 +11635,17 @@
                   },
                   {
                     "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Satyr Hide"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_satyr_hide01"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
                     "RESREF": {
                       "type": "resref",
                       "value": "zep_cre_scarech"
@@ -11679,6 +11811,17 @@
                   },
                   {
                     "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Spiritual Weapon Properties"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_sprtwpn_hide"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
                     "RESREF": {
                       "type": "resref",
                       "value": "zep_cre_thornh"
@@ -11840,6 +11983,17 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 16807774
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Wereboar Properties"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_wboar_hide01"
                     }
                   },
                   {
@@ -13473,6 +13627,17 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 16807690
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Spirtual Weapon Slam"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_sprtwpn_slam"
                     }
                   },
                   {
@@ -18383,17 +18548,6 @@
                   },
                   {
                     "__struct_id": 0,
-                    "RESREF": {
-                      "type": "resref",
-                      "value": "prc_scr_995"
-                    },
-                    "STRREF": {
-                      "type": "dword",
-                      "value": 16790488
-                    }
-                  },
-                  {
-                    "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
                       "value": "Break Enchantment"
@@ -18742,6 +18896,17 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 767
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_997"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990493
                     }
                   },
                   {
@@ -19100,6 +19265,17 @@
                     "__struct_id": 0,
                     "RESREF": {
                       "type": "resref",
+                      "value": "prc_scr_1516"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976372
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
                       "value": "prc_scr_55"
                     },
                     "STRREF": {
@@ -19226,6 +19402,28 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 780
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1500"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976348
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1505"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976348
                     }
                   },
                   {
@@ -21652,6 +21850,17 @@
                     "__struct_id": 0,
                     "RESREF": {
                       "type": "resref",
+                      "value": "prc_scr_995"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990488
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
                       "value": "prc_scr_1049"
                     },
                     "STRREF": {
@@ -21679,6 +21888,28 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 16828346
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1497"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976342
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1502"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976342
                     }
                   },
                   {
@@ -21855,6 +22086,28 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 16827530
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1503"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976354
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1508"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976354
                     }
                   },
                   {
@@ -23153,6 +23406,39 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 16830396
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1468"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990471
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1506"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990471
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1511"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990471
                     }
                   },
                   {
@@ -25764,6 +26050,72 @@
                   },
                   {
                     "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1465"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990482
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_874"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990512
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_865"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990497
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_868"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990502
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1462"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990476
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_871"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990507
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
                     "NAME": {
                       "type": "cexostring",
                       "value": "Regroup"
@@ -26844,6 +27196,17 @@
                     "__struct_id": 0,
                     "RESREF": {
                       "type": "resref",
+                      "value": "prc_scr_877"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990517
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
                       "value": "prc_scr_257"
                     },
                     "STRREF": {
@@ -26937,6 +27300,28 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 2671
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_880"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990522
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_881"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990525
                     }
                   },
                   {
@@ -27223,6 +27608,193 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 931
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1470"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976216
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1473"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976230
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1478"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976230
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1476"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976244
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1481"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976244
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1479"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976258
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1484"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976258
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1494"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976328
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1499"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976328
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1482"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976272
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1487"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976272
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1485"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976286
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1490"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976286
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1488"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976300
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1493"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976300
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1491"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976314
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_1496"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16976314
                     }
                   },
                   {
@@ -27630,6 +28202,17 @@
                     "STRREF": {
                       "type": "dword",
                       "value": 16829598
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_scr_884"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16990530
                     }
                   },
                   {
@@ -29345,7 +29928,7 @@
                     },
                     "RESREF": {
                       "type": "resref",
-                      "value": "mc_blckstickbloo"
+                      "value": "mc_blckstickbld"
                     }
                   },
                   {
@@ -29521,7 +30104,7 @@
                     },
                     "RESREF": {
                       "type": "resref",
-                      "value": "mc_pieceofleathe"
+                      "value": "mc_pieceofleathr"
                     }
                   },
                   {
@@ -30445,7 +31028,7 @@
                     },
                     "RESREF": {
                       "type": "resref",
-                      "value": "mc_grasshopperhl"
+                      "value": "mc_grasshopprhlg"
                     }
                   },
                   {
@@ -32759,6 +33342,913 @@
                 "type": "byte",
                 "value": 3
               },
+              "LIST": {
+                "type": "list",
+                "value": [
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_001"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989225
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_002"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989227
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_003"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989229
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_004"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989231
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_005"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989233
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_006"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989235
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_007"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989237
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_008"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989239
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_009"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989241
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Benzoin"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_010"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_011"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989245
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_012"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989247
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_013"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989249
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_014"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989251
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_015"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989253
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_016"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989255
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_017"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989257
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_018"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989259
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_019"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989261
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_020"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989263
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_021"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989265
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_022"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989267
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_023"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989269
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_024"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989271
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_025"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989273
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_026"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989275
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_027"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989277
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_028"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989279
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_029"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989281
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_030"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989283
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_031"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989285
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_032"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989287
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Fine Herbs"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_000"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_033"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989289
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_034"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989291
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_035"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989293
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_036"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989295
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_037"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989297
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_038"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989299
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_039"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989301
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_040"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989303
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "NAME": {
+                      "type": "cexostring",
+                      "value": "Infusion of"
+                    },
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_infusion_000"
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_041"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989305
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_042"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989307
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_043"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989309
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_044"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989311
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_045"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989313
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_046"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989315
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_047"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989317
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_048"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989319
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_049"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989321
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_050"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989323
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_051"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989325
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_052"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989327
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_053"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989329
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_054"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989331
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_055"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989333
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_056"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989335
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_057"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989337
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_058"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989339
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_059"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989341
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_060"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989343
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_061"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989345
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_062"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989347
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_063"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989349
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_064"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989351
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_065"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989353
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_066"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989355
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_067"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989357
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_068"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989359
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_069"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989361
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_070"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989363
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_071"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989365
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_072"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989367
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_073"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989369
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_074"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989371
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_075"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989373
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_076"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989375
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_077"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989377
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_078"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989379
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_079"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989381
+                    }
+                  },
+                  {
+                    "__struct_id": 0,
+                    "RESREF": {
+                      "type": "resref",
+                      "value": "prc_herb_080"
+                    },
+                    "STRREF": {
+                      "type": "dword",
+                      "value": 16989383
+                    }
+                  }
+                ]
+              },
               "STRREF": {
                 "type": "dword",
                 "value": 6691
@@ -33227,6 +34717,17 @@
                           "RESREF": {
                             "type": "resref",
                             "value": "en3_arrow1"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Pixie Sleep Arrows"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "prc_wamma_sleep"
                           }
                         },
                         {
@@ -37282,6 +38783,17 @@
                           "RESREF": {
                             "type": "resref",
                             "value": "en3_ssword1"
+                          }
+                        },
+                        {
+                          "__struct_id": 0,
+                          "NAME": {
+                            "type": "cexostring",
+                            "value": "Enserric the Rapier"
+                          },
+                          "RESREF": {
+                            "type": "resref",
+                            "value": "iw_rapier"
                           }
                         },
                         {

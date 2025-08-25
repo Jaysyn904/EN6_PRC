@@ -28,7 +28,7 @@ void main()
 
 	SQLocals_SetInt(GetModule(),"ClientEnter",1);
 	DelayCommand(1.0f,SQLocals_SetInt(GetModule(),"ClientEnter",0));
-
+	
 	//:: Number PCs to tell distinct henchmen apart
 	if (SQLocals_GetInt(oPC,"PlayerStart") == 0)
     {
@@ -75,6 +75,12 @@ void main()
 		DelayCommand(0.1,SetupModule());
 		SQLocals_SetInt(GetModule(),"ModuleStart",1);
     }
+	
+	AddJournalQuestEntry("JRNL_XPCHART", 1, oPC, FALSE, FALSE, FALSE);
+    AddJournalQuestEntry("JRNL_LA_BUYOFF", 1, oPC, FALSE, FALSE, FALSE);
+	AddJournalQuestEntry("JRNL_PRC8", 1, oPC, FALSE, FALSE, FALSE);
+	
+	ExecuteScript("0e_onclientload", oPC);
 }
 
 void SetSpecialVariables(object oPC)

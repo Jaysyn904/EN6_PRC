@@ -25,6 +25,159 @@
               "Text": {
                 "type": "cexolocstring",
                 "value": {
+                  "0": "3e D&D Experience Chart\n\nLvl   XP Needed\n01    0\n02    1000\n03    3000\n04    6000\n05    10000\n06    15000\n07    21000\n08    28000\n09    36000\n10    45000\n11    55000\n12    66000\n13    78000\n14    91000\n15    105000\n16    120000\n17    136000\n18    153000\n19    171000\n20    190000\n21    210000\n22    231000\n23    253000\n24    276000\n25    300000\n26    325000\n27    351000\n28    378000\n29    406000\n30    435000\n31    465000\n32    496000\n33    528000\n34    561000\n35    595000\n36    630000\n37    666000\n38    703000\n39    741000\n40    780000"
+                }
+              }
+            }
+          ]
+        },
+        "Name": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "| D&D 3e XP Chart |"
+          }
+        },
+        "Picture": {
+          "type": "word",
+          "value": 65535
+        },
+        "Priority": {
+          "type": "dword",
+          "value": 4
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "JRNL_XPCHART"
+        },
+        "XP": {
+          "type": "dword",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 1,
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "EntryList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 1
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "Starting LA / Level\n      \n01 / 03\n02 / 06 09\n03 / 09 15 18\n04 / 12 21 27 30\n05 / 15 27 36\n06 / 18 33\n07 / 21 39\n08 / 24\n09 / 27\n10 / 30\n11 / 33\n12 / 36\n13 / 39\n\n(Buy-off dialog will be in the PRC menu when you qualify.)"
+                }
+              }
+            }
+          ]
+        },
+        "Name": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "| LA Buy-off Table |"
+          }
+        },
+        "Picture": {
+          "type": "word",
+          "value": 65535
+        },
+        "Priority": {
+          "type": "dword",
+          "value": 4
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "JRNL_LA_BUYOFF"
+        },
+        "XP": {
+          "type": "dword",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 2,
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "EntryList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 1
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
+                  "0": "Visit the PRC8 Discord for ruleset information, as well as other PW servers & dozens of single player PRC8 modules.\n\nhttps://discord.gg/FW9V9RKy5U"
+                }
+              }
+            }
+          ]
+        },
+        "Name": {
+          "type": "cexolocstring",
+          "value": {
+            "0": "| PRC8 Discord |"
+          }
+        },
+        "Picture": {
+          "type": "word",
+          "value": 65535
+        },
+        "Priority": {
+          "type": "dword",
+          "value": 4
+        },
+        "Tag": {
+          "type": "cexostring",
+          "value": "JRNL_PRC8"
+        },
+        "XP": {
+          "type": "dword",
+          "value": 0
+        }
+      },
+      {
+        "__struct_id": 3,
+        "Comment": {
+          "type": "cexostring",
+          "value": ""
+        },
+        "EntryList": {
+          "type": "list",
+          "value": [
+            {
+              "__struct_id": 0,
+              "End": {
+                "type": "word",
+                "value": 0
+              },
+              "ID": {
+                "type": "dword",
+                "value": 1
+              },
+              "Text": {
+                "type": "cexolocstring",
+                "value": {
                   "0": "<CUSTOM111>"
                 }
               }

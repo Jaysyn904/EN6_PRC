@@ -1352,6 +1352,13 @@
         "__struct_id": 8,
         "Mod_Hak": {
           "type": "cexostring",
+          "value": "peps_prc8"
+        }
+      },
+      {
+        "__struct_id": 8,
+        "Mod_Hak": {
+          "type": "cexostring",
           "value": "prc8_en6_top"
         }
       },
