@@ -1615,7 +1615,7 @@
   },
   "Mod_OnPlrGuiEvt": {
     "type": "resref",
-    "value": ""
+    "value": "prc_onplayergui"
   },
   "Mod_OnPlrLvlUp": {
     "type": "resref",

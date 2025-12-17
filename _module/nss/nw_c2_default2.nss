@@ -1,166 +1,138 @@
-//:://////////////////////////////////////////////////
-//:: NW_C2_DEFAULT2
-/*
-  Default OnPerception event handler for NPCs.
-
-  Handles behavior when perceiving a creature for the
-  first time.
- */
-//:://////////////////////////////////////////////////
-
-#include "nw_i0_generic"
-#include "prc_inc_spells"
-
+/*//////////////////////////////////////////////////////////////////////////////
+ Script: nw_c2_default2
+ Programmer: Philos
+////////////////////////////////////////////////////////////////////////////////
+  Monster OnPerception script when not in combat;
+  There are 4 types of perception - Heard, Inaudible, Seen, Vanished.
+  Only one type will ever be true in an event trigger.
+  The order of trigger is Heard/Seen and Inaudible/Vanished.
+  There are two states of percepion Heard and Seen.
+  These states can be set at the same time thus a heard event can see the creature.
+  Fires when ever one of these states changes from TRUE to FALSE or FALSE to TRUE.
+*///////////////////////////////////////////////////////////////////////////////
+#include "0i_associates"
 void main()
 {
-    // * if not runnning normal or better Ai then exit for performance reasons
-    if (GetAILevel() == AI_LEVEL_VERY_LOW) return;
-	
-	ExecuteScript("prc_npc_percep", OBJECT_SELF);
-
-    object oPercep = GetLastPerceived();
+    // * if not runnning normal or better AI then exit for performance reasons
+    //if (GetAILevel() == AI_LEVEL_VERY_LOW) return;
+    object oCreature = OBJECT_SELF;
+    ExecuteScript("prc_npc_percep", oCreature);
+    if(AI_DEBUG) ai_Debug("nw_c2_default2", "19", "AI_ONSPAWN_EVENT: " + IntToString(GetLocalInt(oCreature, AI_ONSPAWN_EVENT)));
+    if(!GetLocalInt(oCreature, AI_ONSPAWN_EVENT)) return;
+    if(GetLastPerceptionSeen())
+    {
+        if(AI_DEBUG) ai_Debug("nw_c2_default2", "22", GetName(oCreature) + " sees " +
+                     GetName(GetLastPerceived()) + " Distance: " +
+                     FloatToString(GetDistanceBetween(GetLastPerceived(), oCreature), 0, 2) + ".");
+    }
+    if(GetLastPerceptionHeard())
+    {
+        if(AI_DEBUG) ai_Debug("nw_c2_default2", "28", GetName(oCreature) + " heard " +
+                     GetName(GetLastPerceived()) + " Distance: " +
+                     FloatToString(GetDistanceBetween(GetLastPerceived(), oCreature), 0, 2) + ".");
+    }
+    if(GetLastPerceptionVanished ())
+    {
+        if(AI_DEBUG) ai_Debug("nw_c2_default2", "34", GetName(oCreature) + " lost sight of " +
+                     GetName(GetLastPerceived ()) + ".");
+    }
+    // We do nothing on Inaudibles so drop out early!
+    if(GetLastPerceptionInaudible())
+    {
+        if(AI_DEBUG) ai_Debug("nw_c2_default2", "41", GetName(oCreature) + " lost sound of " +
+                     GetName(GetLastPerceived()) + ".");
+        return;
+    }
+    object oLastPerceived = GetLastPerceived();
+    if(AI_DEBUG) ai_Debug("nw_c2_default2", "45", "Dead? " + IntToString(GetIsDead(oLastPerceived)) +
+                 " Enemy? " + IntToString(GetIsEnemy(oLastPerceived, oCreature)));
+    if(ai_Disabled(oCreature)) return;
+    if(GetIsDead(oLastPerceived)) return;
     int bSeen = GetLastPerceptionSeen();
-    int bHeard = GetLastPerceptionHeard();
-    if (bHeard == FALSE)
+    // This will cause all NPC's to speak their one-liner conversation
+    // on perception even if they are already in combat.
+    if(GetIsPC(oLastPerceived) && bSeen)
     {
-        // Has someone vanished in front of me?
-        bHeard = GetLastPerceptionVanished();
-    }
-
-    // This will cause the NPC to speak their one-liner
-    // conversation on perception even if they are already
-    // in combat.
-    if(GetSpawnInCondition(NW_FLAG_SPECIAL_COMBAT_CONVERSATION)
-       && GetIsPC(oPercep)
-       && bSeen)
-    {
-        SpeakOneLinerConversation();
-    }
-
-    // March 5 2003 Brent
-    // Had to add this section back in, since  modifications were not taking this specific
-    // example into account -- it made invisibility basically useless.
-    //If the last perception event was hearing based or if someone vanished then go to search mode
-    if ((GetLastPerceptionVanished()) && GetIsEnemy(GetLastPerceived()))
-    {
-        object oGone = GetLastPerceived();
-        if((GetAttemptedAttackTarget() == GetLastPerceived() ||
-           GetAttemptedSpellTarget() == GetLastPerceived() ||
-           GetAttackTarget() == GetLastPerceived()) && GetArea(GetLastPerceived()) != GetArea(OBJECT_SELF))
+        if(GetSpawnInCondition(NW_FLAG_SPECIAL_COMBAT_CONVERSATION))
         {
-           ClearAllActions();
-           DetermineCombatRound();
+            SpeakOneLinerConversation();
         }
     }
-
-    // This section has been heavily revised while keeping the
-    // pre-existing behavior:
-    // - If we're in combat, keep fighting.
-    // - If not and we've perceived an enemy, start to fight.
-    //   Even if the perception event was a 'vanish', that's
-    //   still what we do anyway, since that will keep us
-    //   fighting any visible targets.
-    // - If we're not in combat and haven't perceived an enemy,
-    //   see if the perception target is a PC and if we should
-    //   speak our attention-getting one-liner.
-    if (GetIsInCombat(OBJECT_SELF))
+    if(GetIsEnemy(oLastPerceived, oCreature))
     {
-        // don't do anything else, we're busy
-        //MyPrintString("GetIsFighting: TRUE");
-
-    }
-    // * BK FEB 2003 Only fight if you can see them. DO NOT RELY ON HEARING FOR ENEMY DETECTION
-    else if (GetIsEnemy(oPercep) && bSeen)
-    { // SpawnScriptDebugger();
-        //MyPrintString("GetIsEnemy: TRUE");
-        // We spotted an enemy and we're not already fighting
-        if(!PRCGetHasEffect(EFFECT_TYPE_SLEEP)) {
-            if(GetBehaviorState(NW_FLAG_BEHAVIOR_SPECIAL))
+        // ************************** ENEMY SEEN *******************************
+        if(bSeen)
+        {
+            // If the creature we are perceiving was our invisible creature then
+            // remove that they are invisible.
+            if(oLastPerceived == GetLocalObject(oCreature, AI_IS_INVISIBLE))
             {
-                //MyPrintString("DetermineSpecialBehavior");
-                DetermineSpecialBehavior();
-            } else
-            {
-                //MyPrintString("DetermineCombatRound");
-                SetFacingPoint(GetPosition(oPercep));
-                SpeakString("NW_I_WAS_ATTACKED", TALKVOLUME_SILENT_TALK);
-                DetermineCombatRound();
+                DeleteLocalObject(oCreature, AI_IS_INVISIBLE);
             }
+            ai_MonsterEvaluateNewThreat(oCreature, oLastPerceived, AI_I_SEE_AN_ENEMY);
         }
+        // ************************** ENEMY HEARD ******************************
+        else if(GetLastPerceptionHeard())
+        {
+            ai_MonsterEvaluateNewThreat(oCreature, oLastPerceived, AI_I_HEARD_AN_ENEMY);
+        }
+        // ************************** ENEMY VANISHED ***************************
+        else if(GetLastPerceptionVanished())
+        {
+            // Lets keep a mental note of the invisible creature.
+            SetLocalObject(oCreature, AI_IS_INVISIBLE, oLastPerceived);
+            if(AI_DEBUG) ai_Debug("0e_c2_2_percept", "82", " We saw " + GetName(oLastPerceived) + " disappear!");
+            if(ai_GetIsBusy(oCreature)) return;
+            // If in combat check to see if our target disappeared.
+            // If they have and we are not in melee with them then reevaluate combat
+            // since we lost our target.
+            if(ai_GetIsInCombat(oCreature))
+            {
+                if(AI_DEBUG) ai_Debug("nw_c2_default2", "89", "Is this our target? " +
+                             IntToString(ai_GetAttackedTarget(oCreature, TRUE, TRUE) == oLastPerceived));
+                if(ai_GetAttackedTarget(oCreature, TRUE, TRUE) == oLastPerceived)
+                {
+                    ai_DoMonsterCombatRound(oCreature);
+                }
+            }
+            // We are not in combat so lets move to that location and check it out.
+            else ActionMoveToLocation(GetLocation(oLastPerceived), TRUE);
+            // we use to move to the object but thats a bit creepy!
+            //else ActionMoveToObject(oLastPerceived, TRUE, AI_RANGE_CLOSE);
+        }
+        // ************************ ENEMY INAUDIBLE*****************************
+        // Not used.
     }
     else
     {
-        if (bSeen)
+        // ************************ NON_ENEMY SEEN *****************************
+        if(bSeen)
         {
-            //MyPrintString("GetLastPerceptionSeen: TRUE");
-            if(GetBehaviorState(NW_FLAG_BEHAVIOR_SPECIAL)) {
-                DetermineSpecialBehavior();
-            } else if (GetSpawnInCondition(NW_FLAG_SPECIAL_CONVERSATION)
-                       && GetIsPC(oPercep))
+            if(ai_GetBehaviorState(NW_FLAG_BEHAVIOR_SPECIAL)) ai_DetermineSpecialBehavior(oCreature);
+            else if(GetSpawnInCondition(NW_FLAG_SPECIAL_CONVERSATION) && GetIsPC(oLastPerceived))
             {
-                // The NPC will speak their one-liner conversation
-                // This should probably be:
-                // SpeakOneLinerConversation(oPercep);
-                // instead, but leaving it as is for now.
-                ActionStartConversation(OBJECT_SELF);
+                ActionStartConversation(oCreature);
             }
-        }
-        else
-        // * July 14 2003: Some minor reactions based on invisible creatures being nearby
-        if (bHeard && GetIsEnemy(oPercep))
-        {
-           // SpeakString("vanished");
-            // * don't want creatures wandering too far after noises
-            if (GetDistanceToObject(oPercep) <= 7.0)
-            {
-//                if (GetHasSpell(SPELL_TRUE_SEEING) == TRUE)
-                if (GetHasSpell(SPELL_TRUE_SEEING))
-                {
-                    ActionCastSpellAtObject(SPELL_TRUE_SEEING, OBJECT_SELF);
-                }
-                else
-//                if (GetHasSpell(SPELL_SEE_INVISIBILITY) == TRUE)
-                if (GetHasSpell(SPELL_SEE_INVISIBILITY))
-                {
-                    ActionCastSpellAtObject(SPELL_SEE_INVISIBILITY, OBJECT_SELF);
-                }
-                else
-//                if (GetHasSpell(SPELL_INVISIBILITY_PURGE) == TRUE)
-                if (GetHasSpell(SPELL_INVISIBILITY_PURGE))
-                {
-                    ActionCastSpellAtObject(SPELL_INVISIBILITY_PURGE, OBJECT_SELF);
-                }
-                else
-                {
-                    ActionPlayAnimation(ANIMATION_FIREFORGET_HEAD_TURN_LEFT, 0.5);
-                    ActionPlayAnimation(ANIMATION_FIREFORGET_HEAD_TURN_RIGHT, 0.5);
-                    ActionPlayAnimation(ANIMATION_FIREFORGET_PAUSE_SCRATCH_HEAD, 0.5);
-                }
-            }
-        }
-
-        // activate ambient animations or walk waypoints if appropriate
-       if (!IsInConversation(OBJECT_SELF)) {
-           if (GetIsPostOrWalking()) {
-               WalkWayPoints();
-           } else if (GetIsPC(oPercep) &&
-               (GetSpawnInCondition(NW_FLAG_AMBIENT_ANIMATIONS)
-                || GetSpawnInCondition(NW_FLAG_AMBIENT_ANIMATIONS_AVIAN)
-                || GetSpawnInCondition(NW_FLAG_IMMOBILE_AMBIENT_ANIMATIONS)
-                || GetIsEncounterCreature()))
-           {
-                SetAnimationCondition(NW_ANIM_FLAG_IS_ACTIVE);
-           }
         }
     }
-
+    if(!IsInConversation(oCreature))
+    {
+        if(GetIsPostOrWalking())
+        {
+            WalkWayPoints();
+        }
+        else if(GetIsPC(oLastPerceived) &&
+               (GetSpawnInCondition(NW_FLAG_AMBIENT_ANIMATIONS) ||
+                GetSpawnInCondition(NW_FLAG_AMBIENT_ANIMATIONS_AVIAN) ||
+                GetSpawnInCondition(NW_FLAG_IMMOBILE_AMBIENT_ANIMATIONS) ||
+                GetIsEncounterCreature()))
+        {
+            SetAnimationCondition(NW_ANIM_FLAG_IS_ACTIVE);
+        }
+    }
     // Send the user-defined event if appropriate
-    if(GetSpawnInCondition(NW_FLAG_PERCIEVE_EVENT) && GetLastPerceptionSeen())
+    if(GetSpawnInCondition(NW_FLAG_PERCIEVE_EVENT) && bSeen)
     {
         SignalEvent(OBJECT_SELF, EventUserDefined(EVENT_PERCEIVE));
     }
 }
-
-
-
-

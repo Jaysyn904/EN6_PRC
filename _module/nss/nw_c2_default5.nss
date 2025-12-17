@@ -1,71 +1,37 @@
-//::///////////////////////////////////////////////
-//:: Default On Attacked
-//:: NW_C2_DEFAULT5
-//:: Copyright (c) 2001 Bioware Corp.
-//:://////////////////////////////////////////////
-/*
-    If already fighting then ignore, else determine
-    combat round
-*/
-//:://////////////////////////////////////////////
-//:: Created By: Preston Watamaniuk
-//:: Created On: Oct 16, 2001
-//:://////////////////////////////////////////////
-//:://////////////////////////////////////////////
-//:: Modified By: Deva Winblood
-//:: Modified On: Jan 4th, 2008
-//:: Added Support for Mounted Combat Feat Support
-//:://////////////////////////////////////////////
-
-#include "nw_i0_generic"
-
+/*//////////////////////////////////////////////////////////////////////////////
+ Script: nw_c2_default5
+ Programmer: Philos
+////////////////////////////////////////////////////////////////////////////////
+  Monster OnPhysicalAttacked event script;
+  Fires for all physical attacks, claws, weapons, fists, bow, etc.
+  Fires for taunt skill, animal empathy skill.
+*///////////////////////////////////////////////////////////////////////////////
+#include "0i_actions"
 void main()
 {
-	ExecuteScript("prc_npc_physatt", OBJECT_SELF);
-	
-    if (!GetLocalInt(GetModule(),"X3_NO_MOUNTED_COMBAT_FEAT"))
-        { // set variables on target for mounted combat
-            SetLocalInt(OBJECT_SELF,"bX3_LAST_ATTACK_PHYSICAL",TRUE);
-            SetLocalInt(OBJECT_SELF,"nX3_HP_BEFORE",GetCurrentHitPoints(OBJECT_SELF));
-        } // set variables on target for mounted combat
-
-    if(GetFleeToExit()) {
-        // Run away!
-        ActivateFleeToExit();
-    } else if (GetSpawnInCondition(NW_FLAG_SET_WARNINGS)) {
-        // We give an attacker one warning before we attack
-        // This is not fully implemented yet
-        SetSpawnInCondition(NW_FLAG_SET_WARNINGS, FALSE);
-
-        //Put a check in to see if this attacker was the last attacker
-        //Possibly change the GetNPCWarning function to make the check
-    } else {
-        object oAttacker = GetLastAttacker();
-        if (!GetIsObjectValid(oAttacker)) {
-            // Don't do anything, invalid attacker
-
-        } else if (!GetIsFighting(OBJECT_SELF)) {
-            // We're not fighting anyone else, so
-            // start fighting the attacker
-            if(GetBehaviorState(NW_FLAG_BEHAVIOR_SPECIAL)) {
-                SetSummonHelpIfAttacked();
-                DetermineSpecialBehavior(oAttacker);
-            } else if (GetArea(oAttacker) == GetArea(OBJECT_SELF)) {
-                SetSummonHelpIfAttacked();
-                DetermineCombatRound(oAttacker);
-            }
-
-            //Shout Attack my target, only works with the On Spawn In setup
-            SpeakString("NW_ATTACK_MY_TARGET", TALKVOLUME_SILENT_TALK);
-
-            //Shout that I was attacked
-            SpeakString("NW_I_WAS_ATTACKED", TALKVOLUME_SILENT_TALK);
-        }
+    object oCreature = OBJECT_SELF;
+    ExecuteScript("prc_npc_physatt", oCreature);
+    object oAttacker = GetLastAttacker(oCreature);
+    if(AI_DEBUG) ai_Debug("nw_c2_default5", "14", GetName(oCreature) + " was attacked by " +
+                 GetName(oAttacker) + ".");
+    SetLocalObject(oAttacker, AI_ATTACKED_PHYSICAL, oCreature);
+    // Run away!
+    if(ai_GetFleeToExit(oCreature))
+    {
+        ai_ActivateFleeToExit(oCreature);
+        return;
     }
-
-
     if(GetSpawnInCondition(NW_FLAG_ATTACK_EVENT))
     {
-        SignalEvent(OBJECT_SELF, EventUserDefined(EVENT_ATTACKED));
+        SignalEvent(oCreature, EventUserDefined(EVENT_ATTACKED));
     }
+    if(ai_GetIsBusy(oCreature) || ai_Disabled(oCreature)) return;
+    if(ai_GetIsInCombat(oCreature)) return;
+    // We only inform others if attacked when not busy, not disabled & not in combat.
+    if(AI_DEBUG) ai_Debug("nw_c2_default5", "30", "Tell my allies I've been attacked!");
+    SetLocalObject (oCreature, AI_MY_TARGET, oAttacker);
+    SpeakString(AI_ATKED_BY_WEAPON, TALKVOLUME_SILENT_TALK);
+    // Now move towards the attack in the hopes we can see them.
+    if(GetDistanceBetween(oCreature, oAttacker) < AI_RANGE_CLOSE) ai_DoMonsterCombatRound(oCreature);
+    else ActionMoveToObject(oAttacker, TRUE, AI_RANGE_CLOSE);
 }

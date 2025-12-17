@@ -52,7 +52,7 @@
   },
   "PitchVariation": {
     "type": "float",
-    "value": 0.1000000014901161
+    "value": 0.10000000149011612
   },
   "Positional": {
     "type": "byte",

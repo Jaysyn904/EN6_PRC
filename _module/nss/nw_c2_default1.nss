@@ -1,108 +1,85 @@
-//:://////////////////////////////////////////////////
-//:: NW_C2_DEFAULT1
-/*
-  Default OnHeartbeat script for NPCs.
-
-  This script causes NPCs to perform default animations
-  while not otherwise engaged.
-
-  This script duplicates the behavior of the default
-  script and just cleans up the code and removes
-  redundant conditional checks.
-
- */
-//:://////////////////////////////////////////////////
-//:: Copyright (c) 2002 Floodgate Entertainment
-//:: Created By: Naomi Novik
-//:: Created On: 12/22/2002
-//:://////////////////////////////////////////////////
-
-#include "nw_i0_generic"
-#include "prc_inc_spells"
-
+/*//////////////////////////////////////////////////////////////////////////////
+ Script: nw_c2_default1
+ Programmer: Philos
+////////////////////////////////////////////////////////////////////////////////
+  Monster OnHeartbeat script;
+  This will usually fire every 6 seconds (1 game round).
+*///////////////////////////////////////////////////////////////////////////////
+#include "0i_module"
 void main()
 {
-
-    // * if not runnning normal or better Ai then exit for performance reasons
-    if (GetAILevel() == AI_LEVEL_VERY_LOW) return;
-	
-	ExecuteScript("prc_npc_hb", OBJECT_SELF);
-
-    // Buff ourselves up right away if we should
-    if(GetSpawnInCondition(NW_FLAG_FAST_BUFF_ENEMY))
-    {
-        // This will return TRUE if an enemy was within 40.0 m
-        // and we buffed ourselves up instantly to respond --
-        // simulates a spellcaster with protections enabled
-        // already.
-        if(TalentAdvancedBuff(40.0))
-        {
-            // This is a one-shot deal
-            SetSpawnInCondition(NW_FLAG_FAST_BUFF_ENEMY, FALSE);
-
-            // This return means we skip sending the user-defined
-            // heartbeat signal in this one case.
-            return;
-        }
-    }
-
-
-    if(PRCGetHasEffect(EFFECT_TYPE_SLEEP))
+    // If not runnning normal or better AI then exit for performance reasons
+    if (GetAILevel(OBJECT_SELF) == AI_LEVEL_VERY_LOW) return;
+    object oCreature = OBJECT_SELF;
+    ExecuteScript("prc_npc_hb", oCreature);
+    if(AI_DEBUG) ai_Debug("nw_c2_default1", "16", GetName(oCreature) + " Heartbeat." +
+             " OnSpawn: " + IntToString(GetLocalInt(oCreature, AI_ONSPAWN_EVENT)));
+    // We run our OnSpawn in the heartbeat so the creator can use the original
+    // OnSpawn for their own use. If we have to recreate the creature then we
+    // skip the rest of the heartbeat since this version is being destroyed!
+    if(ai_OnMonsterSpawn(oCreature)) return;
+    if(AI_DEBUG) ai_Debug("nw_c2_default1", "16", GetName(oCreature) + " Heartbeat." +
+             " Searching: " + IntToString(GetLocalInt(oCreature, AI_AM_I_SEARCHING)));
+    if(ai_GetHasEffectType(oCreature, EFFECT_TYPE_SLEEP))
     {
         // If we're asleep and this is the result of sleeping
         // at night, apply the floating 'z's visual effect
         // every so often
-
         if(GetSpawnInCondition(NW_FLAG_SLEEPING_AT_NIGHT))
         {
             effect eVis = EffectVisualEffect(VFX_IMP_SLEEP);
             if(d10() > 6)
             {
-                ApplyEffectToObject(DURATION_TYPE_INSTANT, eVis, OBJECT_SELF);
+                ApplyEffectToObject(DURATION_TYPE_INSTANT, eVis, oCreature);
             }
         }
     }
-
-    // If we have the 'constant' waypoints flag set, walk to the next
-    // waypoint.
-    else if ( GetWalkCondition(NW_WALK_FLAG_CONSTANT) )
-    {
-        WalkWayPoints();
-    }
-
-    // Check to see if we should be playing default animations
-    // - make sure we don't have any current targets
-    else if ( !GetIsObjectValid(GetAttemptedAttackTarget())
-          && !GetIsObjectValid(GetAttemptedSpellTarget())
-          // && !GetIsPostOrWalking())
-          && !GetIsObjectValid(GetNearestSeenEnemy()))
-    {
-        if (GetBehaviorState(NW_FLAG_BEHAVIOR_SPECIAL) || GetBehaviorState(NW_FLAG_BEHAVIOR_OMNIVORE) ||
-            GetBehaviorState(NW_FLAG_BEHAVIOR_HERBIVORE))
-        {
-            // This handles special attacking/fleeing behavior
-            // for omnivores & herbivores.
-            DetermineSpecialBehavior();
-        }
-        else if (!IsInConversation(OBJECT_SELF))
-        {
-            if (GetSpawnInCondition(NW_FLAG_AMBIENT_ANIMATIONS)
-                || GetSpawnInCondition(NW_FLAG_AMBIENT_ANIMATIONS_AVIAN)
-                || GetIsEncounterCreature())
-            {
-                PlayMobileAmbientAnimations();
-            }
-            else if (GetSpawnInCondition(NW_FLAG_IMMOBILE_AMBIENT_ANIMATIONS))
-            {
-                PlayImmobileAmbientAnimations();
-            }
-        }
-    }
-
-    // Send the user-defined event signal if specified
+    // Send the user-defined event signal if specified here so it doesn't get skipped.
+    //SendMessageToPC(GetFirstPC(), "HB_EVENT: " + IntToString(GetSpawnInCondition(NW_FLAG_HEARTBEAT_EVENT)));
     if(GetSpawnInCondition(NW_FLAG_HEARTBEAT_EVENT))
     {
-        SignalEvent(OBJECT_SELF, EventUserDefined(EVENT_HEARTBEAT));
+        SignalEvent(oCreature, EventUserDefined(EVENT_HEARTBEAT));
     }
+    if(ai_GetIsBusy(oCreature) || ai_Disabled(oCreature) ||
+       GetLocalInt(oCreature, AI_AM_I_SEARCHING)) return;
+    if(ai_GetIsInCombat(oCreature))
+    {
+        if(ai_GetBehaviorState(NW_FLAG_BEHAVIOR_HERBIVORE))
+        {
+            object oTarget = ai_GetNearestEnemy(oCreature, 1, 7, 7, -1, -1, TRUE);
+            if(GetDistanceBetween(oCreature, oTarget) <= 6.0)
+            {
+                if(GetLevelByClass(CLASS_TYPE_DRUID, oTarget) == 0 && GetLevelByClass(CLASS_TYPE_RANGER, oTarget) == 0)
+                {
+                    SetLocalString(oCreature, AI_COMBAT_SCRIPT, "ai_coward");
+                    ActionMoveAwayFromObject(oTarget, TRUE, AI_RANGE_LONG);
+                    return;
+                }
+            }
+        }
+        ai_DoMonsterCombatRound(oCreature);
+        return;
+    }
+    if(ai_CheckForCombat(oCreature, TRUE)) return;
+    // If we have not set up our talents then we need to check to see if we should.
+    if(!GetLocalInt(oCreature, AI_TALENTS_SET))
+    {
+        // We setup our talents when a PC gets withing Battlefield range 40.0 meters.
+        object oPC = GetNearestCreature(CREATURE_TYPE_PLAYER_CHAR, PLAYER_CHAR_IS_PC, oCreature, 1, CREATURE_TYPE_REPUTATION, REPUTATION_TYPE_ENEMY);
+        if(oPC != OBJECT_INVALID && GetDistanceBetween(oCreature, oPC) <= AI_RANGE_BATTLEFIELD)
+        {
+            if(AI_DEBUG) ai_Debug("nw_c2_default1", "72", GetName(oCreature) + " is " +
+                     FloatToString(GetDistanceBetween(oCreature, oPC), 0, 2) + " from " + GetName(oPC));
+            if(AI_DEBUG) ai_Debug("nw_c2_default1", "74", GetName(oCreature) + " is Setting Creature Talents and buffing!");
+            ai_SetupMonsterBuffTargets(oCreature);
+            // To save steps and time we set the talents while we buff!
+            ai_SetCreatureTalents(oCreature, TRUE);
+            ai_ClearBuffTargets(oCreature, "AI_ALLY_TARGET_");
+        }
+    }
+    if(ai_TryHealing(oCreature, oCreature)) return;
+    // This is where PEPS passes control to either the Bioware Waypoint system and
+    // AmbientAnimation scripts. A Persistent World can write there own scripts in 0e_animations.
+    ExecuteScript("0e_animations", oCreature);
 }
 

@@ -802,7 +802,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 18.84619331359863
+          "value": 18.846193313598633
         },
         "YOrientation": {
           "type": "float",
@@ -810,11 +810,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 15.35867786407471
+          "value": 15.358677864074707
         },
         "ZPosition": {
           "type": "float",
-          "value": -5.7220458984375e-006
+          "value": -0.0000057220458984375
         }
       },
       {
@@ -1671,7 +1671,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": 0.3598996996879578
+          "value": 0.35989969968795776
         },
         "XPosition": {
           "type": "float",
@@ -1683,11 +1683,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 23.38289070129395
+          "value": 23.382890701293945
         },
         "ZPosition": {
           "type": "float",
-          "value": -5.7220458984375e-006
+          "value": -0.0000057220458984375
         }
       }
     ]
@@ -1711,7 +1711,7 @@
         },
         "Bearing": {
           "type": "float",
-          "value": -1.570794224739075
+          "value": -1.5707942247390747
         },
         "CloseLockDC": {
           "type": "byte",
@@ -1903,7 +1903,7 @@
         },
         "X": {
           "type": "float",
-          "value": 27.79000091552734
+          "value": 27.790000915527344
         },
         "Y": {
           "type": "float",
@@ -5335,7 +5335,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 19.19705390930176
+          "value": 19.197053909301758
         },
         "YOrientation": {
           "type": "float",
@@ -5343,11 +5343,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 15.26823425292969
+          "value": 15.268234252929688
         },
         "ZPosition": {
           "type": "float",
-          "value": -5.7220458984375e-006
+          "value": -0.0000057220458984375
         }
       }
     ]
@@ -5475,19 +5475,19 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 15.86095237731934
+          "value": 15.860952377319336
         },
         "YOrientation": {
           "type": "float",
-          "value": -0.0245408657938242
+          "value": -0.024540865793824196
         },
         "YPosition": {
           "type": "float",
-          "value": 19.54211807250977
+          "value": 19.542118072509766
         },
         "ZPosition": {
           "type": "float",
-          "value": 4.76837158203125e-007
+          "value": 0.000000476837158203125
         }
       },
       {
@@ -5568,7 +5568,7 @@
         },
         "ZPosition": {
           "type": "float",
-          "value": -5.7220458984375e-006
+          "value": -0.0000057220458984375
         }
       },
       {
@@ -5645,11 +5645,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 15.47821807861328
+          "value": 15.478218078613281
         },
         "ZPosition": {
           "type": "float",
-          "value": -5.7220458984375e-006
+          "value": -0.0000057220458984375
         }
       },
       {
@@ -5706,7 +5706,7 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 22.46238708496094
+          "value": 22.462387084960938
         },
         "ZPosition": {
           "type": "float",
@@ -5779,7 +5779,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 20.64836502075195
+          "value": 20.648365020751953
         },
         "YOrientation": {
           "type": "float",
@@ -5787,11 +5787,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 18.11384582519531
+          "value": 18.113845825195312
         },
         "ZPosition": {
           "type": "float",
-          "value": -5.7220458984375e-006
+          "value": -0.0000057220458984375
         }
       }
     ]

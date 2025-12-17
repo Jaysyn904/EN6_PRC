@@ -256,11 +256,11 @@
         },
         "X": {
           "type": "float",
-          "value": 44.90000152587891
+          "value": 44.900001525878906
         },
         "Y": {
           "type": "float",
-          "value": 43.38000106811523
+          "value": 43.380001068115234
         },
         "Z": {
           "type": "float",
@@ -332,7 +332,7 @@
               "__struct_id": 3,
               "PointX": {
                 "type": "float",
-                "value": 10.06326293945313
+                "value": 10.063262939453125
               },
               "PointY": {
                 "type": "float",
@@ -340,14 +340,14 @@
               },
               "PointZ": {
                 "type": "float",
-                "value": 0.02719011344015598
+                "value": 0.027190113440155983
               }
             },
             {
               "__struct_id": 3,
               "PointX": {
                 "type": "float",
-                "value": 10.06326293945313
+                "value": 10.063262939453125
               },
               "PointY": {
                 "type": "float",
@@ -355,14 +355,14 @@
               },
               "PointZ": {
                 "type": "float",
-                "value": 0.02719011344015598
+                "value": 0.027190113440155983
               }
             },
             {
               "__struct_id": 3,
               "PointX": {
                 "type": "float",
-                "value": 9.5367431640625e-007
+                "value": 0.00000095367431640625
               },
               "PointY": {
                 "type": "float",
@@ -370,7 +370,7 @@
               },
               "PointZ": {
                 "type": "float",
-                "value": 0.02244796790182591
+                "value": 0.022447967901825905
               }
             }
           ]
@@ -484,7 +484,7 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 0.1158180236816406
+          "value": 0.11581802368164062
         },
         "ZOrientation": {
           "type": "float",
@@ -554,11 +554,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 1.067807197570801
+          "value": 1.0678071975708008
         },
         "ZPosition": {
           "type": "float",
-          "value": -5.222045729169622e-006
+          "value": -0.000005222045729169622
         }
       },
       {
@@ -603,7 +603,7 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": 0.02454478666186333
+          "value": 0.024544786661863327
         },
         "XPosition": {
           "type": "float",
@@ -615,11 +615,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 39.81762313842773
+          "value": 39.817623138427734
         },
         "ZPosition": {
           "type": "float",
-          "value": -5.222045729169622e-006
+          "value": -0.000005222045729169622
         }
       },
       {
@@ -668,7 +668,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 30.19664573669434
+          "value": 30.196645736694336
         },
         "YOrientation": {
           "type": "float",
@@ -676,11 +676,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 21.51488876342773
+          "value": 21.514888763427734
         },
         "ZPosition": {
           "type": "float",
-          "value": -5.006790161132813e-006
+          "value": -0.0000050067901611328125
         }
       },
       {
@@ -729,7 +729,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 52.36632919311523
+          "value": 52.366329193115234
         },
         "YOrientation": {
           "type": "float",
@@ -737,11 +737,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 14.86351776123047
+          "value": 14.863517761230469
         },
         "ZPosition": {
           "type": "float",
-          "value": 0.1181821823120117
+          "value": 0.11818218231201172
         }
       }
     ]

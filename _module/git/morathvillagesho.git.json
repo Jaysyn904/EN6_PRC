@@ -877,11 +877,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 13.15390777587891
+          "value": 13.153907775878906
         },
         "ZPosition": {
           "type": "float",
-          "value": -5.7220458984375e-006
+          "value": -0.0000057220458984375
         }
       },
       {
@@ -1700,7 +1700,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 17.2840747833252
+          "value": 17.284074783325195
         },
         "YOrientation": {
           "type": "float",
@@ -1708,11 +1708,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 21.57852745056152
+          "value": 21.578527450561523
         },
         "ZPosition": {
           "type": "float",
-          "value": 0.002589821815490723
+          "value": 0.0025898218154907227
         }
       }
     ]
@@ -5360,7 +5360,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 17.40674018859863
+          "value": 17.406740188598633
         },
         "YOrientation": {
           "type": "float",
@@ -5368,11 +5368,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 21.28012084960938
+          "value": 21.280120849609375
         },
         "ZPosition": {
           "type": "float",
-          "value": 0.002589821815490723
+          "value": 0.0025898218154907227
         }
       },
       {
@@ -13597,7 +13597,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 14.94308471679688
+          "value": 14.943084716796875
         },
         "YOrientation": {
           "type": "float",
@@ -13605,11 +13605,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 13.23893165588379
+          "value": 13.238931655883789
         },
         "ZPosition": {
           "type": "float",
-          "value": -2.384185791015625e-007
+          "value": -0.0000002384185791015625
         }
       }
     ]

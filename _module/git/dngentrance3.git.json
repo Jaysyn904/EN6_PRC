@@ -256,7 +256,7 @@
         },
         "X": {
           "type": "float",
-          "value": 24.73999977111816
+          "value": 24.739999771118164
         },
         "Y": {
           "type": "float",
@@ -332,7 +332,7 @@
               "__struct_id": 3,
               "PointX": {
                 "type": "float",
-                "value": 10.03108406066895
+                "value": 10.031084060668945
               },
               "PointY": {
                 "type": "float",
@@ -347,7 +347,7 @@
               "__struct_id": 3,
               "PointX": {
                 "type": "float",
-                "value": 10.03108406066895
+                "value": 10.031084060668945
               },
               "PointY": {
                 "type": "float",
@@ -366,7 +366,7 @@
               },
               "PointY": {
                 "type": "float",
-                "value": 2.57207179069519
+                "value": 2.5720717906951904
               },
               "PointZ": {
                 "type": "float",
@@ -476,7 +476,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 9.996242523193359
+          "value": 9.99624252319336
         },
         "YOrientation": {
           "type": "float",
@@ -484,7 +484,7 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 0.1471018791198731
+          "value": 0.14710187911987305
         },
         "ZOrientation": {
           "type": "float",
@@ -592,11 +592,11 @@
         },
         "XOrientation": {
           "type": "float",
-          "value": 6.826715889474144e-006
+          "value": 0.000006826715889474144
         },
         "XPosition": {
           "type": "float",
-          "value": 10.70011901855469
+          "value": 10.700119018554688
         },
         "YOrientation": {
           "type": "float",
@@ -608,7 +608,7 @@
         },
         "ZPosition": {
           "type": "float",
-          "value": -5.222045729169622e-006
+          "value": -0.000005222045729169622
         }
       },
       {
@@ -661,7 +661,7 @@
         },
         "YOrientation": {
           "type": "float",
-          "value": 2.102055759678478e-006
+          "value": 0.0000021020557596784784
         },
         "YPosition": {
           "type": "float",
@@ -669,7 +669,7 @@
         },
         "ZPosition": {
           "type": "float",
-          "value": 0.01000607013702393
+          "value": 0.010006070137023926
         }
       },
       {
@@ -718,7 +718,7 @@
         },
         "XPosition": {
           "type": "float",
-          "value": 15.05633068084717
+          "value": 15.056330680847168
         },
         "YOrientation": {
           "type": "float",
@@ -730,7 +730,7 @@
         },
         "ZPosition": {
           "type": "float",
-          "value": 0.01000607013702393
+          "value": 0.010006070137023926
         }
       },
       {
@@ -787,11 +787,11 @@
         },
         "YPosition": {
           "type": "float",
-          "value": 1.15187931060791
+          "value": 1.1518793106079102
         },
         "ZPosition": {
           "type": "float",
-          "value": -5.222045729169622e-006
+          "value": -0.000005222045729169622
         }
       }
     ]
